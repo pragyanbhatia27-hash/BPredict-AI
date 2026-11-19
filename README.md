@@ -1,54 +1,34 @@
-# BPredict AI
+# Pressure Forecast Compass (BPredict AI)
 
-**AI-Based Blood Pressure Forecasting and Lifestyle Monitoring Web Application**
+An educational machine-learning web app that analyses 30 days of blood pressure
+readings and daily lifestyle data (salt intake, physical activity, exertion level)
+and estimates the expected blood pressure **range** for the next 24 hours.
 
-BPredict AI is an educational machine-learning web application that analyses a user's blood pressure history and daily lifestyle information, then estimates an expected blood pressure range for the next 24 hours.
+> **Disclaimer:** This is an educational/research project. Predictions are not
+> medical diagnoses and must never be used to change or stop prescribed medication.
 
-> **Important disclaimer:** This is an educational/research project, not a medical device. Predictions are not medical diagnoses or treatment advice. Never start, stop, or change prescribed medication based on an app prediction.
+**Live app:** https://pressure-forecast-compass.vercel.app
 
-## Project overview
+## How it works
 
-- Records blood pressure readings three times a day (morning, afternoon, and night).
-- Uses a 30-day history of blood pressure and lifestyle information.
-- Considers lifestyle factors such as salt intake, physical activity, and exertion level.
-- Uses a Random Forest model trained on synthetic data and evaluates it on a held-out test set.
-- Presents an estimated blood pressure range for the next 24 hours.
+TRAINING DATA → MODEL TRAINING → NEW USER'S 30-DAY HISTORY → NEXT 24-HOUR PREDICTION
 
-## Technology stack
+- Blood pressure is recorded three times a day (morning, afternoon, night).
+- A Random Forest model is trained on synthetic data and evaluated on a held-out
+  test set (accuracy, precision, recall, F1-score, confusion matrix).
+- A user's 30-day history is passed to the trained model to produce the forecast.
 
-- React 19
-- TypeScript
-- TanStack Start
-- Tailwind CSS 4
-- Radix UI
-- Recharts
-- Vite
+## Tech stack
 
-## Getting started
+TanStack Start, React 19, TypeScript, Tailwind CSS 4, Radix UI, Recharts, Vite.
 
-### Prerequisites
+## Development
 
-Install Node.js (LTS) and npm, or install Bun.
-
-### Installation
-
-```bash
-git clone https://github.com/pragyanbhatia27-hash/BPredict-AI.git
-cd BPredict-AI
-npm install
-npm run dev
+```sh
+git clone https://github.com/pragyanbhatia27-hash/pressure-forecast-compass.git
+cd pressure-forecast-compass
+bun install   # or: npm install
+bun run dev   # or: npm run dev
 ```
 
-To create a production build:
-
-```bash
-npm run build
-```
-
-## Project status
-
-This repository is the source-code home for the BPredict AI college project. The application is intended for learning and demonstration.
-
-## Live demo
-
-https://pressure-forecast-compass.vercel.app
+Build for production with `bun run build` (or `npm run build`).
