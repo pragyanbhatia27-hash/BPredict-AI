@@ -1,4 +1,4 @@
-# Pressure Forecast Compass (BPredict AI)
+# BPredict AI
 
 An educational machine-learning web app that analyses 30 days of blood pressure
 readings and daily lifestyle data (salt intake, physical activity, exertion level)
