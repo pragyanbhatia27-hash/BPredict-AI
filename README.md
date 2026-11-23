@@ -7,7 +7,7 @@ and estimates the expected blood pressure **range** for the next 24 hours.
 > **Disclaimer:** This is an educational/research project. Predictions are not
 > medical diagnoses and must never be used to change or stop prescribed medication.
 
-**Live app:** https://pressure-forecast-compass.vercel.app
+**Live app:** bpredict-ai.vercel.app
 
 ## How it works
 
